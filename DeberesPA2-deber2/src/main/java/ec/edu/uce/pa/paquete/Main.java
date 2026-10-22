@@ -26,21 +26,10 @@ public class Main implements QuarkusApplication{
         System.out.println("Iniciando aplicacion Quarkus");
 
         Pedido pedido =new Pedido("Juan ", "laptop", 1500, "juan@a.com");
-
+        pedido.setTelefono("1641651565413");
+        
         this.pedidoService.realizar(pedido);
 
-
-
-
-
-        
-        //DEBERES
-        /*
-        System.out.println("------------------------------");
-        System.out.println("Sistema de matriculacion");
-        Estudiante estu = new Estudiante("1003456789", "Jhon", "Programacion", "jhon@.com", 23);
-        this.matriculaService.procesarMatricula(estu);
-        */
 
         return 0;
     }
