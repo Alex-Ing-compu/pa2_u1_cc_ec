@@ -21,7 +21,6 @@ public class AuditoriaInterceptor {
     @AroundInvoke 
     public Object interceptar(InvocationContext context) throws Exception{
 
-       
         //Todo lo que esta arriba ase ejecuta antes de ejecutar el metodo interceptor
         Object resultado = context.proceed(); //El proced: Ejecuta el metodo interceptado
 
